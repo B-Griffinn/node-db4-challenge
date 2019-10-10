@@ -22,8 +22,8 @@
 ## Getting Started
 
 ### First Migration
-1) Create Meals table
-2) Create Steps table
+1) Create Steps table
+2) Create Meals table
 3) Create Ingredient table
 4) Create Recipe table 
 Create a recipe out of the steps provided
