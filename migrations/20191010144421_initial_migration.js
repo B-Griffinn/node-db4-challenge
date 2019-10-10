@@ -30,7 +30,7 @@ exports.up = function(knex) {
     tbl.text('measurement')
         .notNullable();
     
-    tbl.foreign('meal_id')
+    tbl.integer('meal_id')
     // forces integer to be positive
         .unsigned()
         .notNullable()
