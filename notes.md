@@ -38,3 +38,4 @@ Create a recipe out of the steps provided
 
 
 ## Seed Data
+- knex seed:make *seed table name*
