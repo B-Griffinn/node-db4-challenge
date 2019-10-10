@@ -1,26 +1,26 @@
 
 exports.up = function(knex) {
-  return knex.schema.createTable('recipes_steps', tbl => {
+  return knex.schema.createTable('recipe_ingredients', tbl => {
       tbl.increments();
 
-    tbl.integer('recipe_id')
-        // forces integer to be positive
+      tbl.integer('ingredient_id')
+        //force integer to be +
         .unsigned()
         .notNullable()
         .references('id')
         // this table must exist already
-        .inTable('recipes');
+        .inTable('ingredients')
 
-    tbl.integer('instruction_id')
-        // forces integer to be positive
+    tbl.integer('recipe_id')
+        //force integer to be +
         .unsigned()
         .notNullable()
         .references('id')
         // this table must exist already
-        .inTable('steps');
+        .inTable('recipes')
   })
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTableIfExists('recipe_steps')
+  return knex.schema.dropTableIfexists('recipe_ingredients')
 };

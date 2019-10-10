@@ -35,3 +35,6 @@ Create a recipe out of the steps provided
 ### Third Migration
 6) Create Recipe Ingredients table
 - create FK for this table
+
+
+## Seed Data
