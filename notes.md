@@ -21,20 +21,14 @@
 
 ## Getting Started
 
-### First Migration
+### Migration
 1) Create Steps table
-2) Create Meals table
 3) Create Ingredient table
 4) Create Recipe table 
 Create a recipe out of the steps provided
-
-### Second Migration
-5) Create Recipe Steps
+5) Create Recipe ingredients
 - create FK for this table
 
-### Third Migration
-6) Create Recipe Ingredients table
-- create FK for this table
 
 
 ## Seed Data
